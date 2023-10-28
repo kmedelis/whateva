@@ -11,8 +11,6 @@ export default async function CustomAppBar({ params }) {
 
   const [city, neighborhood, street] = params.advertisements[0].split('-');
 
-  console.log(city, neighborhood, street)
-
   const filteredAdvertisements = await getAdvertisements(city, neighborhood, street);
 
   return (
