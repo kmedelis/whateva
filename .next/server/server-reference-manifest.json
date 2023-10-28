@@ -1,0 +1,45 @@
+{
+  "node": {
+    "60a76c229b0dd55d76a7062dea3740d8c85b30d6": {
+      "workers": {
+        "app/advertisements/[[...advertisements]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkristijonasmedelis%2FDesktop%2Frealestatebaby%2Ffrontend%2Futils%2Fgeneral%2FuploadedAdvertisementService.ts%22%2C%5B%22updateUploadedAdvertisement%22%2C%22getAllUploadedAdvertisements%22%2C%22incrementTimesSearched%22%5D%5D%2C%5B%22%2FUsers%2Fkristijonasmedelis%2FDesktop%2Frealestatebaby%2Ffrontend%2Futils%2Fgeneral%2FadvertisementService.ts%22%2C%5B%22createAdvertisement%22%2C%22getAdvertisements%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/advertisements/[[...advertisements]]/page": "rsc"
+      }
+    },
+    "23a68716300736e86b8324e0579e264fa2d5dc79": {
+      "workers": {
+        "app/advertisements/[[...advertisements]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkristijonasmedelis%2FDesktop%2Frealestatebaby%2Ffrontend%2Futils%2Fgeneral%2FuploadedAdvertisementService.ts%22%2C%5B%22updateUploadedAdvertisement%22%2C%22getAllUploadedAdvertisements%22%2C%22incrementTimesSearched%22%5D%5D%2C%5B%22%2FUsers%2Fkristijonasmedelis%2FDesktop%2Frealestatebaby%2Ffrontend%2Futils%2Fgeneral%2FadvertisementService.ts%22%2C%5B%22createAdvertisement%22%2C%22getAdvertisements%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/advertisements/[[...advertisements]]/page": "rsc"
+      }
+    },
+    "e3842e0464e8b86d981a8d7b6cbc89b0960ae8ea": {
+      "workers": {
+        "app/advertisements/[[...advertisements]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkristijonasmedelis%2FDesktop%2Frealestatebaby%2Ffrontend%2Futils%2Fgeneral%2FuploadedAdvertisementService.ts%22%2C%5B%22updateUploadedAdvertisement%22%2C%22getAllUploadedAdvertisements%22%2C%22incrementTimesSearched%22%5D%5D%2C%5B%22%2FUsers%2Fkristijonasmedelis%2FDesktop%2Frealestatebaby%2Ffrontend%2Futils%2Fgeneral%2FadvertisementService.ts%22%2C%5B%22createAdvertisement%22%2C%22getAdvertisements%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/advertisements/[[...advertisements]]/page": "rsc"
+      }
+    },
+    "9d72e5e185c3dbd5babc5804e8db5acf84b8579e": {
+      "workers": {
+        "app/advertisements/[[...advertisements]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkristijonasmedelis%2FDesktop%2Frealestatebaby%2Ffrontend%2Futils%2Fgeneral%2FuploadedAdvertisementService.ts%22%2C%5B%22updateUploadedAdvertisement%22%2C%22getAllUploadedAdvertisements%22%2C%22incrementTimesSearched%22%5D%5D%2C%5B%22%2FUsers%2Fkristijonasmedelis%2FDesktop%2Frealestatebaby%2Ffrontend%2Futils%2Fgeneral%2FadvertisementService.ts%22%2C%5B%22createAdvertisement%22%2C%22getAdvertisements%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/advertisements/[[...advertisements]]/page": "rsc"
+      }
+    },
+    "5150372f5b241693de847e1e1be9620958c39174": {
+      "workers": {
+        "app/advertisements/[[...advertisements]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkristijonasmedelis%2FDesktop%2Frealestatebaby%2Ffrontend%2Futils%2Fgeneral%2FuploadedAdvertisementService.ts%22%2C%5B%22updateUploadedAdvertisement%22%2C%22getAllUploadedAdvertisements%22%2C%22incrementTimesSearched%22%5D%5D%2C%5B%22%2FUsers%2Fkristijonasmedelis%2FDesktop%2Frealestatebaby%2Ffrontend%2Futils%2Fgeneral%2FadvertisementService.ts%22%2C%5B%22createAdvertisement%22%2C%22getAdvertisements%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/advertisements/[[...advertisements]]/page": "rsc"
+      }
+    }
+  },
+  "edge": {}
+}
