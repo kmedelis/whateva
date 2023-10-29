@@ -17,9 +17,6 @@ export default function AdvertisementCard({ ad }) {
                 image={image1.src}
                 alt={ad.name}
             />
-            <Typography variant="caption" component="div" sx={{ ml: 2, mt: 1 }}>
-                Virtual Tour
-            </Typography>
             <Typography variant="h5" component="div" sx={{ ml: 2 }}>
                 ${ad.price}
             </Typography>
