@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/kristijonasmedelis/Desktop/realestatebaby/frontend/app/layout":["static/media/7d8c9b0ca4a64a5a-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/kristijonasmedelis/Desktop/realestatebaby/frontend/app/layout\":[\"static/media/7d8c9b0ca4a64a5a-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

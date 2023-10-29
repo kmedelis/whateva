@@ -28,12 +28,10 @@ export const getAdvertisements = async (city: string, neighborhood?: string, str
         whereClause.street = street;
     }
 
-    console.log(whereClause)
 
     const existingAddress = await prisma.advertisement.findMany({
         where: whereClause,
     });
     
-    console.log(existingAddress);
     return existingAddress;
 }
