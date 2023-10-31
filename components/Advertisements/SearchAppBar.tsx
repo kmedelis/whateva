@@ -4,17 +4,21 @@ import { AppBar, Toolbar, Box, Button, Hidden } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 import SearchModal from './SearchModal';
 import { UploadedAdvertisement } from '@/models/UploadedAdvertisement';
-import RentalPriceSelect from './RentalPriceSelect';
-import RentalPriceSelectPopover from './RentalPriceSelectMobile';
+import RentalPriceSelectPopover from './RentalPriceSelectPopover';
+import YearSelectPopover from './YearSelectPopover';
 
 interface SearchAppBarProps {
   uploadedAdvertisements: UploadedAdvertisement[]
   setMinimumPriceFilter: Dispatch<SetStateAction<number>>
   setMaximumPriceFilter: Dispatch<SetStateAction<number>>
+  setFilterMinimumYear: Dispatch<SetStateAction<number>>
+  setFilterMaximumYear: Dispatch<SetStateAction<number>>
+  minYear: number;
+  maxYear: number;
 }
 
 
-const SearchAppBar: React.FC<SearchAppBarProps> = ({ uploadedAdvertisements, setMinimumPriceFilter, setMaximumPriceFilter }) => {
+const SearchAppBar: React.FC<SearchAppBarProps> = ({ uploadedAdvertisements, setMinimumPriceFilter, setMaximumPriceFilter, setFilterMinimumYear, setFilterMaximumYear, minYear, maxYear }) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -39,10 +43,11 @@ const SearchAppBar: React.FC<SearchAppBarProps> = ({ uploadedAdvertisements, set
             Search
           </Box>
           <Hidden smDown>
-            <RentalPriceSelect></RentalPriceSelect>
+            {/* <RentalPriceSelectPopover setMinimumPriceFilter={setMinimumPriceFilter} setMaximumPriceFilter={setMaximumPriceFilter}/> */}
           </Hidden>
           <Hidden smUp>
-            <RentalPriceSelectPopover setMinimumPriceFilter={setMinimumPriceFilter} setMaximumPriceFilter={setMaximumPriceFilter}/>
+            <RentalPriceSelectPopover setMinimumPriceFilter={setMinimumPriceFilter} setMaximumPriceFilter={setMaximumPriceFilter} />
+            <YearSelectPopover setFilterMinimumYear={setFilterMinimumYear} setFilterMaximumYear={setFilterMaximumYear} minYear={minYear} maxYear={maxYear}/>
           </Hidden>
           <SearchModal open={open} onClose={handleClose} uploadedAdvertisements={uploadedAdvertisements} />
         </Toolbar>
