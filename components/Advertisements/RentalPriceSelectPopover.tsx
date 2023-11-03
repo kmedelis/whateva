@@ -111,7 +111,13 @@ function RentalPriceSelectPopover({ setMinimumPriceFilter, setMaximumPriceFilter
             </Button>
           </Box>
         </List>
-        <Box display="flex" justifyContent="space-between" p={1}>
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          p={1}
+          bgcolor="#f7f7f7"
+          borderTop="1px solid #e0e0e0"
+        >
           <Button onClick={clearFilters} size="small" variant="outlined">Clear</Button>
           <Button onClick={handlePopoverClose} size="small" variant="contained" color="primary">Done</Button>
         </Box>

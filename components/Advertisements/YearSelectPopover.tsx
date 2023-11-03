@@ -1,5 +1,5 @@
 "use client"
-import { Button, List, ListItem, Popover, Slider, TextField } from "@mui/material"
+import { Box, Button, List, ListItem, Popover, Slider, TextField } from "@mui/material"
 import { useState } from "react";
 
 export default function YearSelectPopover({ setFilterMinimumYear, setFilterMaximumYear, minYear, maxYear }) {
@@ -7,7 +7,7 @@ export default function YearSelectPopover({ setFilterMinimumYear, setFilterMaxim
     const [anchorEl, setAnchorEl] = useState(null);
     const [year, setYear] = useState<number[]>([minYear, maxYear]);
     const [selectedMin, setSelectedMin] = useState(minYear);
-    const [selectedMax, setSelectedMax] = useState(maxYear);  
+    const [selectedMax, setSelectedMax] = useState(maxYear);
 
 
     const handlePopoverOpen = (event) => {
@@ -23,13 +23,13 @@ export default function YearSelectPopover({ setFilterMinimumYear, setFilterMaxim
         setSelectedMin(event.target.value);
         setYear(prevYear => [event.target.value, prevYear[1]]);
         setFilterMinimumYear(event.target.value || '0');
-      };
-    
-      const handleMaximumInputChange = (event) => {
+    };
+
+    const handleMaximumInputChange = (event) => {
         setSelectedMax(event.target.value);
         setYear(prevYear => [prevYear[0], event.target.value]);
         setFilterMaximumYear(event.target.value || '999999999');
-      };
+    };
 
     const handleSliderValue = (event: Event, newValue: number | number[]) => {
         setFilterMinimumYear(newValue[0])
@@ -38,6 +38,14 @@ export default function YearSelectPopover({ setFilterMinimumYear, setFilterMaxim
         setSelectedMax(newValue[1])
         setYear(newValue as number[]);
     }
+
+    const clearFilters = () => {
+        setSelectedMin(minYear);
+        setSelectedMax(maxYear);
+        setFilterMinimumYear(minYear);
+        setFilterMaximumYear(maxYear);
+        setYear([minYear, maxYear]);
+    };
 
     const open = Boolean(anchorEl);
     const id = open ? 'simple-popover' : undefined;
@@ -59,6 +67,13 @@ export default function YearSelectPopover({ setFilterMinimumYear, setFilterMaxim
                 transformOrigin={{
                     vertical: 'top',
                     horizontal: 'center',
+                }}
+                slotProps={{
+                    paper: {
+                        sx: {
+                            width: '100%', // This will make the popover take the full width of the screen
+                        },
+                    },
                 }}
             >
                 <List>
@@ -86,12 +101,21 @@ export default function YearSelectPopover({ setFilterMinimumYear, setFilterMaxim
                             getAriaLabel={() => 'Temperature range'}
                             value={year}
                             onChange={handleSliderValue}
-                            valueLabelDisplay="on"
                             min={minYear}
                             max={maxYear}
                         />
                     </ListItem>
                 </List>
+                <Box
+                    display="flex"
+                    justifyContent="space-between"
+                    p={1}
+                    bgcolor="#f7f7f7" 
+                    borderTop="1px solid #e0e0e0"  
+                >
+                    <Button onClick={clearFilters} size="small" variant="outlined">Clear</Button>
+                    <Button onClick={handlePopoverClose} size="small" variant="contained" color="primary">Done</Button>
+                </Box>
             </Popover>
         </div>
     )
