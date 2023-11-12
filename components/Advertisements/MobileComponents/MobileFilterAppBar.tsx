@@ -2,12 +2,12 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { AppBar, Toolbar, Box, Button, Hidden } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
-import SearchModal from './SearchModal';
+import SearchModal from '../SearchModal';
 import { UploadedAdvertisement } from '@/models/UploadedAdvertisement';
-import RentalPriceSelectPopover from './RentalPriceSelectPopover';
-import YearSelectPopover from './YearSelectPopover';
+import RentalPriceSelectPopover from '../RentalPriceSelectPopover';
+import YearSelectPopover from '../YearSelectPopover';
 
-interface SearchAppBarProps {
+interface MobileFilterAppBarProps {
   uploadedAdvertisements: UploadedAdvertisement[]
   setMinimumPriceFilter: Dispatch<SetStateAction<number>>
   setMaximumPriceFilter: Dispatch<SetStateAction<number>>
@@ -18,7 +18,7 @@ interface SearchAppBarProps {
 }
 
 
-const SearchAppBar: React.FC<SearchAppBarProps> = ({ uploadedAdvertisements, setMinimumPriceFilter, setMaximumPriceFilter, setFilterMinimumYear, setFilterMaximumYear, minYear, maxYear }) => {
+const MobileFilterAppBar: React.FC<MobileFilterAppBarProps> = ({ uploadedAdvertisements, setMinimumPriceFilter, setMaximumPriceFilter, setFilterMinimumYear, setFilterMaximumYear, minYear, maxYear }) => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -56,4 +56,4 @@ const SearchAppBar: React.FC<SearchAppBarProps> = ({ uploadedAdvertisements, set
   );
 }
 
-export default SearchAppBar;
+export default MobileFilterAppBar;

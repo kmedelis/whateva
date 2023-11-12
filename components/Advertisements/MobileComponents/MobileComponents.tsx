@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
-import AdvertisementCard from '@/components/Advertisements/AdvertisementCard';
-import SearchAppBar from './SearchAppBar';
+import MobileAdvertisementCard from '@/components/Advertisements/MobileComponents/MobileAdvertisementCard';
+import MobileFilterAppBar from './MobileFilterAppBar';
 
 function MobileComponents({ advertisements, searchAdvertisemenents }) {
 
@@ -16,10 +16,10 @@ function MobileComponents({ advertisements, searchAdvertisemenents }) {
 
     return (
         <div>
-            <SearchAppBar uploadedAdvertisements={searchAdvertisemenents} setMinimumPriceFilter={setMinimumFilterPrice} setMaximumPriceFilter={setFilterMaximumPrice} setFilterMinimumYear={setFilterMinimumYear} setFilterMaximumYear={setFilterMaximumYear} minYear={minBuildYear} maxYear={maxYear} />
+            <MobileFilterAppBar uploadedAdvertisements={searchAdvertisemenents} setMinimumPriceFilter={setMinimumFilterPrice} setMaximumPriceFilter={setFilterMaximumPrice} setFilterMinimumYear={setFilterMinimumYear} setFilterMaximumYear={setFilterMaximumYear} minYear={minBuildYear} maxYear={maxYear} />
             {filteredAdvertisements.length > 0 ? (
                 filteredAdvertisements.map(ad => (
-                    <AdvertisementCard ad={ad} key={ad.id} />
+                    <MobileAdvertisementCard ad={ad} key={ad.id} />
                 ))
             ) : (
                 <div>No advertisements available for the selected price.</div>

@@ -1,11 +1,11 @@
-import AdvertisementCard from "./AdvertisementCard";
-import MainAppBar from "./MainAppBar";
-import SearchAppBar from "./SearchAppBar";
+import AdvertisementCard from "../MobileComponents/MobileAdvertisementCard";
+import DesktopMainAppBar from "./ComputerMainAppBar";
+import SearchAppBar from "../MobileComponents/MobileFilterAppBar";
 
 function ComputerComponents({ advertisements, searchAdvertisemenents }) {
     return (
         <div>
-            <MainAppBar />
+            <DesktopMainAppBar />
             <SearchAppBar uploadedAdvertisements={searchAdvertisemenents}/>
             {advertisements.map(ad => (
                 <AdvertisementCard ad={ad} key={ad.id} />

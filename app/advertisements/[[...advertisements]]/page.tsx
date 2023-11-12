@@ -1,12 +1,12 @@
 import React from 'react';
 import { Hidden } from "@mui/material";
-import SearchAppBar from '@/components/Advertisements/SearchAppBar';
-import MainAppBar from '@/components/Advertisements/MainAppBar';
+import SearchAppBar from '@/components/Advertisements/MobileComponents/MobileFilterAppBar';
+import MainAppBar from '@/components/Advertisements/DesktopComponents/ComputerMainAppBar';
 import { getAllUploadedAdvertisements } from '@/utils/general/uploadedAdvertisementService';
 import { getAdvertisements } from '@/utils/general/advertisementService';
-import AdvertisementCard from '@/components/Advertisements/AdvertisementCard';
-import MobileComponents from '@/components/Advertisements/MobileComponents';
-import ComputerComponents from '@/components/Advertisements/ComputerComponents';
+import AdvertisementCard from '@/components/Advertisements/MobileComponents/MobileAdvertisementCard';
+import MobileComponents from '@/components/Advertisements/MobileComponents/MobileComponents';
+import ComputerComponents from '@/components/Advertisements/DesktopComponents/ComputerComponents';
 
 export default async function CustomAppBar({ params }) {
   const uploadedAdvertisements = await getAllUploadedAdvertisements();

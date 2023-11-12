@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import image1 from '@/images/image1.jpeg';
 
-export default function AdvertisementCard({ ad }) {
+export default function MobileAdvertisementCard({ ad }) {
     return (
         <Card elevation={3} sx={{ maxWidth: 500, m: 3 }}>
             <CardMedia

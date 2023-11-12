@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Button, Toolbar, Box } from "@mui/material";
 
-export default function MainAppBar() {
+export default function ComputerMainAppBar() {
   return (
       <AppBar position="static">
         <Toolbar>
