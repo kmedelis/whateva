@@ -6,7 +6,7 @@ import { UploadedAdvertisement } from '@/models/UploadedAdvertisement';
 import { useRouter } from 'next/navigation';
 
 interface SearchModalProps {
-    open: boolean;
+    openSearch: boolean;
     onClose: () => void;
     uploadedAdvertisements: UploadedAdvertisement[]
 }
@@ -23,7 +23,7 @@ const style = {
     p: 4,
 };
 
-const SearchModal: React.FC<SearchModalProps> = ({ open, onClose, uploadedAdvertisements }) => {
+const SearchModal: React.FC<SearchModalProps> = ({ openSearch, onClose, uploadedAdvertisements }) => {
 
     const [selectedValues, setSelectedValues] = useState<string[]>([]);
     const router = useRouter();
@@ -108,7 +108,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ open, onClose, uploadedAdvert
 
             <Hidden smUp>
                 <Dialog
-                    open={open}
+                    open={openSearch}
                     fullScreen
                     fullWidth>
                     <Button onClick={handleModalCloseMobile}>close</Button>

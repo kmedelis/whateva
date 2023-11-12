@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import MobileAdvertisementCard from '@/components/Advertisements/MobileComponents/MobileAdvertisementCard';
 import MobileFilterAppBar from './MobileFilterAppBar';
+import MobileSearchAppBar from './MobileSearchAppBar';
 
 function MobileComponents({ advertisements, searchAdvertisemenents }) {
 
@@ -16,6 +17,7 @@ function MobileComponents({ advertisements, searchAdvertisemenents }) {
 
     return (
         <div>
+            <MobileSearchAppBar uploadedAdvertisements={searchAdvertisemenents}/>
             <MobileFilterAppBar uploadedAdvertisements={searchAdvertisemenents} setMinimumPriceFilter={setMinimumFilterPrice} setMaximumPriceFilter={setFilterMaximumPrice} setFilterMinimumYear={setFilterMinimumYear} setFilterMaximumYear={setFilterMaximumYear} minYear={minBuildYear} maxYear={maxYear} />
             {filteredAdvertisements.length > 0 ? (
                 filteredAdvertisements.map(ad => (

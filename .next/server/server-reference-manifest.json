@@ -1,4 +1,45 @@
 {
-  "node": {},
+  "node": {
+    "294f74fcd27891ea2c348094f869a604514ee31f": {
+      "workers": {
+        "app/advertisements/[[...advertisements]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkristijonasmedelis%2Fwhateva%2Futils%2Fgeneral%2FuploadedAdvertisementService.ts%22%2C%5B%22updateUploadedAdvertisement%22%2C%22getAllUploadedAdvertisements%22%2C%22incrementTimesSearched%22%5D%5D%2C%5B%22%2FUsers%2Fkristijonasmedelis%2Fwhateva%2Futils%2Fgeneral%2FadvertisementService.ts%22%2C%5B%22createAdvertisement%22%2C%22getAdvertisements%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/advertisements/[[...advertisements]]/page": "rsc"
+      }
+    },
+    "4674996cc733abf6252dcc344b2eeab5fb41bcb9": {
+      "workers": {
+        "app/advertisements/[[...advertisements]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkristijonasmedelis%2Fwhateva%2Futils%2Fgeneral%2FuploadedAdvertisementService.ts%22%2C%5B%22updateUploadedAdvertisement%22%2C%22getAllUploadedAdvertisements%22%2C%22incrementTimesSearched%22%5D%5D%2C%5B%22%2FUsers%2Fkristijonasmedelis%2Fwhateva%2Futils%2Fgeneral%2FadvertisementService.ts%22%2C%5B%22createAdvertisement%22%2C%22getAdvertisements%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/advertisements/[[...advertisements]]/page": "rsc"
+      }
+    },
+    "3c319a183b606b7da8bb105ec9425b63b80b5ed7": {
+      "workers": {
+        "app/advertisements/[[...advertisements]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkristijonasmedelis%2Fwhateva%2Futils%2Fgeneral%2FuploadedAdvertisementService.ts%22%2C%5B%22updateUploadedAdvertisement%22%2C%22getAllUploadedAdvertisements%22%2C%22incrementTimesSearched%22%5D%5D%2C%5B%22%2FUsers%2Fkristijonasmedelis%2Fwhateva%2Futils%2Fgeneral%2FadvertisementService.ts%22%2C%5B%22createAdvertisement%22%2C%22getAdvertisements%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/advertisements/[[...advertisements]]/page": "rsc"
+      }
+    },
+    "5ab65fa2d98b4a63e21dc9abccee183dce920191": {
+      "workers": {
+        "app/advertisements/[[...advertisements]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkristijonasmedelis%2Fwhateva%2Futils%2Fgeneral%2FuploadedAdvertisementService.ts%22%2C%5B%22updateUploadedAdvertisement%22%2C%22getAllUploadedAdvertisements%22%2C%22incrementTimesSearched%22%5D%5D%2C%5B%22%2FUsers%2Fkristijonasmedelis%2Fwhateva%2Futils%2Fgeneral%2FadvertisementService.ts%22%2C%5B%22createAdvertisement%22%2C%22getAdvertisements%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/advertisements/[[...advertisements]]/page": "rsc"
+      }
+    },
+    "3904fbbd0c293091ec2ebf161b8bf06e9c919691": {
+      "workers": {
+        "app/advertisements/[[...advertisements]]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkristijonasmedelis%2Fwhateva%2Futils%2Fgeneral%2FuploadedAdvertisementService.ts%22%2C%5B%22updateUploadedAdvertisement%22%2C%22getAllUploadedAdvertisements%22%2C%22incrementTimesSearched%22%5D%5D%2C%5B%22%2FUsers%2Fkristijonasmedelis%2Fwhateva%2Futils%2Fgeneral%2FadvertisementService.ts%22%2C%5B%22createAdvertisement%22%2C%22getAdvertisements%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/advertisements/[[...advertisements]]/page": "rsc"
+      }
+    }
+  },
   "edge": {}
 }
