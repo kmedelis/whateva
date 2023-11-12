@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import { List, ListItem, ListItemText, Button, Popover, TextField, Box } from '@mui/material';
 
-function RentalPriceSelectPopover({ setMinimumPriceFilter, setMaximumPriceFilter }) {
+function RentalPriceSelectPopover({ setMinimumPriceFilter, setMaximumPriceFilter, setIsPopoverOpen }) {
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedMin, setSelectedMin] = useState('');
   const [selectedMax, setSelectedMax] = useState('');
 
   const handlePopoverOpen = (event) => {
     setAnchorEl(event.currentTarget);
+    setIsPopoverOpen(true); // Open the backdrop
   };
 
   const handlePopoverClose = () => {
     setAnchorEl(null);
+    setIsPopoverOpen(false); // Close the backdrop
   };
 
   const handleMinimumInputChange = (event) => {

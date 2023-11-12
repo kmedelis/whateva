@@ -13,16 +13,17 @@ interface MobileFilterAppBarProps {
   setFilterMaximumYear: Dispatch<SetStateAction<number>>
   minYear: number;
   maxYear: number;
+  setIsPopoverOpen: Dispatch<SetStateAction<boolean>>
 }
 
 
-const MobileFilterAppBar: React.FC<MobileFilterAppBarProps> = ({ uploadedAdvertisements, setMinimumPriceFilter, setMaximumPriceFilter, setFilterMinimumYear, setFilterMaximumYear, minYear, maxYear }) => {
+const MobileFilterAppBar: React.FC<MobileFilterAppBarProps> = ({ uploadedAdvertisements, setMinimumPriceFilter, setMaximumPriceFilter, setFilterMinimumYear, setFilterMaximumYear, minYear, maxYear, setIsPopoverOpen }) => {
   return (
     <>
       <AppBar position="static">
         <Toolbar>
           <Hidden smUp>
-            <RentalPriceSelectPopover setMinimumPriceFilter={setMinimumPriceFilter} setMaximumPriceFilter={setMaximumPriceFilter} />
+            <RentalPriceSelectPopover setMinimumPriceFilter={setMinimumPriceFilter} setMaximumPriceFilter={setMaximumPriceFilter} setIsPopoverOpen={setIsPopoverOpen}/>
             <YearSelectPopover setFilterMinimumYear={setFilterMinimumYear} setFilterMaximumYear={setFilterMaximumYear} minYear={minYear} maxYear={maxYear}/>
           </Hidden>
         </Toolbar>
