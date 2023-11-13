@@ -23,6 +23,7 @@ model Advertisement {
   name               String
   price              Int
   city               String
+  type               String
   neighborhood       String
   street             String
   houseNumber        String

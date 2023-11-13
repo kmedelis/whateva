@@ -8,12 +8,12 @@ function RentalPriceSelectPopover({ setMinimumPriceFilter, setMaximumPriceFilter
 
   const handlePopoverOpen = (event) => {
     setAnchorEl(event.currentTarget);
-    setIsPopoverOpen(true); // Open the backdrop
+    setIsPopoverOpen(true); 
   };
 
   const handlePopoverClose = () => {
     setAnchorEl(null);
-    setIsPopoverOpen(false); // Close the backdrop
+    setIsPopoverOpen(false); 
   };
 
   const handleMinimumInputChange = (event) => {
